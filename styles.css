@@ -1,0 +1,628 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* This section is the header and the navbar as well  */
+header{
+    border:3px solid pink;
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav{
+    border:3px solid black;
+    min-height: 10vh;
+    width: 100%;
+}
+
+/* This is the main section of the overview also called the index.html */
+.overview1, .overview2, .overview3{
+    border:4px solid #008000;
+    min-height: 100vh;
+    width: 100%;
+    padding: 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.overview-paragraph1, .overview-paragraph2, .overview-paragraph3{
+    border: 3px solid orange;
+    width: 40%;
+    min-height: 400px;
+}
+
+.overviewimg1, .overviewimg2, .overviewimg3{
+    border: 3px solid red;
+    width: 50%;
+    min-height: 500px;
+}
+
+
+/* Responsiveness of the  index page*/
+
+
+@media(min-width:1024px){
+    .overviewimg1, .overviewimg2, .overviewimg3{
+    border: 3px solid orange;
+    width: 50%;
+    height: 50vh;
+}
+}
+@media(max-width:920px){
+    header{
+        width:100%;
+        min-height: auto;
+    }
+    
+}
+
+@media(max-width:768px){
+
+    
+
+    .overviewimg1, .overviewimg2, .overviewimg3{
+        width: 50%;
+         min-height:40vh;
+         border: 2px solid yellow;
+    }
+
+    nav{
+        min-height: 10vh;
+        padding: 32px;
+    }
+
+
+    header{
+        height: 60vh;
+        border: 10px solid green;
+    }
+.overview1, .overview2, .overview3{
+        padding: 6vw;
+        min-height: 70vh;
+    }
+
+    .overview-paragraph1, .overview-paragraph2, .overview-paragraph3{
+        width:40vw;
+    }
+}
+
+@media(max-width:480px){
+
+    .overview1, .overview2, .overview3{
+        padding: 6vw;
+        min-height: 60vh;
+    }
+
+}
+
+/* This is the section for the features of the products */
+.hero-for-products{
+    border: 2vw solid green;
+    display: flex;
+    height: 90vh;
+    padding: 5vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-words{
+    width: 40%;
+}
+
+
+.features{
+    border:1vw solid black;
+    padding: 5vw;
+}
+
+.feature-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+}
+
+.box-for-feature{
+    height: 20vh;
+    border: 2px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* This is the stylus support section */
+.support-product{
+    border: 10px solid pink;
+    display: flex;
+    min-height:50vh ;
+    padding: 5vw;
+    justify-content: space-between;
+}
+
+.support-product-words{
+    width: 40%;
+   min-height: 30vh;
+    border:2px solid green;
+}
+
+.support-product-image{
+    width: 50%;
+    min-height: 40vh;
+    border: 1vw solid red;
+}
+
+
+.images-of-devices{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    padding: 5vw;
+    border:2px solid blue;
+}
+
+.devices{
+    flex:1;
+    height: 50vh;
+    border: 2px solid black;
+}
+
+
+.other-hero{
+    height: 60vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:2vw solid blue;
+}
+
+
+.categories-for-products{
+    display:flex;
+    justify-content:space-around;
+    padding:3vw;
+}
+
+.category-for-products{
+    width:25%;
+    height:15vh;
+    border:9px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.scroll{
+    border: 2vw solid greenyellow;
+    display:flex;
+    gap:2vw;
+    padding:3vw;
+}
+
+.scroll-image{
+    min-width:250px;
+    height:30vh;
+    border:1vw solid black;
+}
+
+.headset{
+    border: 1vw solid yellow;
+    display:flex;
+    justify-content:space-around;
+    padding:3vw;
+}
+
+.headset > div{
+    border: 1vw solid green;
+    width: 20vw;
+min-height: 50vh;
+}
+
+
+.bundle{
+    display:flex;
+    padding:5vw;
+    justify-content:space-between;
+}
+
+.bundle-words{
+    border:3px solid blue;
+    width:40%;
+    
+}
+
+.bundle-image{
+    width:50%;
+    height:50vh;
+    border:2px solid black;
+}
+
+/* Responsiveness of the  index page*/
+
+@media(max-width:920px){
+header{
+    width:100%;
+    border: 2vw solid green;
+    height: 100vh;
+}
+}
+
+@media(max-width:720px){
+header{
+    width:100%;
+    border: 2vw solid;
+    height: 100vh;
+}
+
+
+.headset > div{
+    min-height: 20vh;
+}
+
+.images-of-devices{
+border: 2px solid purple;
+    min-height:7vh;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.images-of-devices > div{
+    border:3px solid gold;
+    min-height: 10vh;
+}
+}
+
+.services-hero{
+    height: 60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    border-bottom:2px solid black;
+}
+
+
+.services{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2vw;
+    padding:5vw;
+}
+
+.box-for-services{
+    height:20vh;
+    border:2px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+
+
+.services-details{
+    border:4px solid purple;
+    display:flex;
+    padding:5vw;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.service-detail2{
+    display:flex;
+    padding:5vw;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items:center;
+    border: 3px solid gold;
+}
+
+.service-detail3{
+    border:4px solid purple;
+   display:flex;
+    padding:5vw;
+    justify-content:space-between;
+    flex-direction:row-reverse;
+    align-items:center;
+}
+
+.detail-text{
+    border: 2px solid blue;
+    width:40%;
+    min-height: 20vh;
+}
+
+.detail-image{
+    width:50%;
+   min-height:30vh;
+    border:2px solid black;
+}
+
+
+
+.together{
+    height: 40vh;
+    padding:5vw;
+    text-align:center;
+    border:6px solid purple;
+}
+
+.together-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2vw;
+    margin-top:3vw;
+}
+
+
+.link{
+    border:2px solid black;
+    padding:1vw;
+    min-height: 8vh;
+    width:15vw;
+}
+
+
+
+
+
+
+
+/* This is for the buying page */
+.hero-for-buying{
+    height:60vh;
+    display:flex;
+    justify-content:center;
+    border:2px solid black;
+}
+
+/* This is for the categories boxes */
+.categories{
+    border:7px solid green;
+    display:flex;
+    justify-content:space-around;
+    padding:3vw;
+}
+
+.category-box{
+    width:20%;
+    height:15vh;
+    border:2px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+
+
+
+.products-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:3vw;
+    padding:5vw;
+}
+
+.product-box{
+    border:2px solid black;
+    padding:2vw;
+    text-align:center;
+    min-height:50vh;
+}
+
+
+
+
+.partners{
+    border: 3px solid gold;
+    min-height: 80vh;
+    padding:5vw;
+    text-align:center;
+}
+
+.partner-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2vw;
+    margin-top:2vw;
+}
+
+.partner{
+   min-height:40vh;
+    border:2px solid black;
+}
+
+
+.world{
+    border: 9px solid green;
+    display:flex;
+    justify-content:space-between;
+    padding:5vw;
+    align-items:center;
+}
+
+.world-text{
+    width:40%;
+    border:2px solid yellow;
+    min-height: 30vh;
+}
+
+.world-map{
+    width:50%;
+    height:40vh;
+    border:2px solid black;
+}
+
+.hero-for-security{
+    height:60vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    border:5px solid black;
+}
+
+
+.security-scroll{
+     border:5px solid pink;
+     min-height:100vh;
+    display:flex;
+    align-items: center;
+   justify-content: space-evenly;
+}
+
+.security-box{
+     border:5px solid purple;
+     width: 20%;
+    min-height:60vh;
+    border:2px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+
+.security-detail{
+border:2vh solid pink;
+    display:flex;
+    padding:5vw;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.security-detail2{
+    border:2vh solid gold;
+    display:flex;
+    padding:5vw;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.security-details3{
+border:2vh solid green;
+    display:flex;
+    padding:5vw;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.security-details4{
+border:2vh solid green;
+    display:flex;
+    padding:5vw;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.security-details5{
+border:2vh solid green;
+    display:flex;
+    padding:5vw;
+    justify-content:space-between;
+    align-items:center;
+}
+.detail-text{
+    width:40%;
+    min-height: 40vh;
+}
+
+.detail-img{
+    width:50%;
+    height:50vh;
+    border:2px solid black;
+}
+
+
+.protection{
+    padding:5vw;
+    text-align:center;
+}
+
+.layers{
+    display:flex;
+    justify-content:center;
+    gap:2vw;
+    margin-top:2vw;
+
+
+}
+
+.layer{
+    border:2px solid black;
+    min-height: 8vh;
+    width:20vw;
+    border-radius: 30px;
+}
+
+@media(max-width:1024px){
+    .security-box{
+     border:5px solid pink;
+     min-height:20vh;
+    width:40vw;
+}
+}
+
+@media(max-width:720px){
+    .security-box{
+     border:5px solid pink;
+     min-height:40vh;
+    width:30%;
+}
+.products-grid{
+    grid-template-columns: repeat(1, 1fr);
+    min-height: 7vh;
+}
+
+.security-detail{
+    font-size: 10px;
+}
+
+.layer{
+    border:2px solid gold;
+    min-height: 4vh;
+    width:20vw;
+    border-radius: 30px;
+}
+
+.layer >p{
+    font-size:10px;
+}
+.partner{
+   min-height:30vh;
+}
+}
+
+footer{
+    width: 100%;
+    height: 50vh;
+    border: 0.3vw solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-sections-all{
+    width: 100%;
+    border: 0.2vw rgb(189, 65, 86) solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-sections{
+    border: 0.2vw solid red;
+    align-self: baseline;
+}
+
+.copyright{
+    align-self: center;
+}

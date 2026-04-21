@@ -599,6 +599,9 @@ border:2vh solid green;
 .partner{
    min-height:30vh;
 }
+
+
+
 }
 
 
@@ -994,12 +997,12 @@ footer{
 .footer-sections-all{
     width: 100%;
     border: 0.2vw rgb(189, 65, 86) solid;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .footer-sections{
+    width: 30vw;
     border: 0.2vw solid red;
     align-self: baseline;
 }

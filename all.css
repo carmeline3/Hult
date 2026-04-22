@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* This section is the header and the navbar as well  */
+header{
+    border:3px solid pink;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+nav{
+    border:3px solid black;
+    min-height: 10vh;
+    width: 100%;
+}
+
+/* This is the main section of the overview also called the index.html */
+.overview1, .overview2, .overview3{
+    border:4px solid #008000;
+    min-height: 100vh;
+    width: 100%;
+    padding: 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.overview-paragraph1, .overview-paragraph2, .overview-paragraph3{
+    border: 3px solid orange;
+    width: 40%;
+    min-height: 400px;
+}
+
+.overviewimg1, .overviewimg2, .overviewimg3{
+    border: 3px solid red;
+    width: 50%;
+    min-height: 500px;
+}
+
+
+/* Responsiveness of the  index page and some of the other pages*/
+
+
+@media(min-width:1024px){
+    .overviewimg1, .overviewimg2, .overviewimg3{
+    border: 3px solid orange;
+    width: 50%;
+    height: 50vh;
+}
+}
+@media(max-width:920px){
+    header{
+        width:100%;
+        min-height: auto;
+    }
+    
+}
+
+@media(max-width:768px){
+
+    
+
+    .overviewimg1, .overviewimg2, .overviewimg3{
+        width: 50%;
+         min-height:40vh;
+         border: 2px solid yellow;
+    }
+
+    nav{
+        min-height: 10vh;
+        padding: 32px;
+    }
+
+
+    header{
+        height: 60vh;
+        border: 10px solid green;
+    }
+.overview1, .overview2, .overview3{
+        padding: 6vw;
+        min-height: 70vh;
+    }
+
+    .overview-paragraph1, .overview-paragraph2, .overview-paragraph3{
+        width:40vw;
+    }
+}
+
+@media(max-width:480px){
+
+    .overview1, .overview2, .overview3{
+        padding: 6vw;
+        min-height: 60vh;
+    }
+
+}
+
+
+
+
+/* Responsiveness of the  index page*/
+
+@media(max-width:920px){
+header{
+    width:100%;
+    border: 2vw solid green;
+    height: 100vh;
+}
+}
+
+@media(max-width:720px){
+header{
+    width:100%;
+    border: 2vw solid;
+    height: 100vh;
+}
+
+
+.headset > div{
+    min-height: 20vh;
+}
+
+.images-of-devices{
+border: 2px solid purple;
+    min-height:7vh;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.images-of-devices > div{
+    border:3px solid gold;
+    min-height: 10vh;
+}
+}
+
+
+
+@media(max-width:1024px){
+    .security-box{
+     border:5px solid pink;
+     min-height:20vh;
+    width:40vw;
+}
+}
+
+@media(max-width:720px){
+    .security-box{
+     border:5px solid pink;
+     min-height:40vh;
+    width:30%;
+}
+.products-grid{
+    grid-template-columns: repeat(1, 1fr);
+    min-height: 7vh;
+}
+
+.security-detail{
+    font-size: 10px;
+}
+
+
+.layer{
+    border:2px solid gold;
+    min-height: 4vh;
+    width:20vw;
+    border-radius: 30px;
+}
+
+.layer >p{
+    font-size:10px;
+}
+.partner{
+   min-height:30vh;
+}
+
+
+
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    min-height: 50vh;
+    border: 0.3vw solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-sections-all{
+    width: 100%;
+    border: 0.2vw rgb(189, 65, 86) solid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-sections{
+    width: 30vw;
+    border: 0.2vw solid red;
+    align-self: baseline;
+}
+
+.copyright{
+    align-self: center;
+}
+

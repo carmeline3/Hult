@@ -1,0 +1,295 @@
+/* This is Nissi's section */
+
+/* Smartphones */
+
+#smartphones{
+    width: 100%;
+    min-height: auto;
+    border: 0.3vw solid red;
+}
+
+#smartphones h1{
+    text-align: center;
+    width: 100%;
+    min-height:20vh;
+    padding-top: 7vh;
+}
+
+.smart-card{
+    border: 0.3vw solid orangered;
+    width: 100%;
+    min-height: 50vh;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.smart-card p{
+    width: 40%;
+    min-height: 80%;
+    border: 0.3vw solid yellow;
+    text-align: center;
+    padding-top: 15vh;
+}
+
+#smartphone-features{
+    border: 0.3vw solid green;
+    width: 100%;
+    min-height: 65vh;
+    
+}
+
+#smartphone-features h2{
+    text-align: center;
+    width: 100%;
+    min-height:15vh;
+    padding-top: 5vh;
+}
+
+#feature-scroll-phone{
+    border: 0.3vw solid blue;
+    width: 100%;
+    min-height: 75%;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+}
+
+#feature-scroll-phone #title{
+    text-align: center;
+    width: 90%;
+    min-height:15vh;
+    padding-top: 5vh;
+    position: relative;
+    align-self: baseline;
+
+}
+
+.s-feature-card{
+    border: 3px solid orchid;
+    width: 40%;
+    min-height: 30vh;
+    flex-shrink: 0;
+    margin: 3vw 3vh;
+}
+
+
+/* Laptops */
+
+#laptop{
+    border: 0.3vw solid purple;
+    width: 100%;
+    min-height: auto;
+}
+
+#laptop h1{
+    text-align: center;
+    width: 100%;
+    min-height:20vh;
+    padding-top: 7vh;
+}
+
+#laptop-devices{
+    border: 0.3vw solid darkred;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    overflow-y: scroll;
+}
+
+.l-device{
+    border: 0.3vw solid orangered;
+    width: 50%;
+    min-height: 50vh;
+    flex-shrink: 0;
+    margin: 3vh 3vw;
+}
+
+/* Smartwatches */
+
+#smartwatch{
+    border: 0.3vw solid yellow;
+    width: 100%;
+    min-height: auto;
+    margin: 5vh auto;
+
+}
+
+.watch-card-header{
+    border: 0.3vw solid green;
+    width: 100%;
+    min-height: 40vh;
+    text-align: center;
+    padding-top: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.watch-card{
+    border:0.3vw solid blue;
+    width: 40%;
+    min-height: 50vh;
+    margin: 2vh 2vw;
+
+}
+
+.right{
+    justify-self: end;
+}
+
+
+
+
+
+
+
+/* This is Cam's section */
+
+/* This is the section for the features of the products */
+.hero-for-products{
+    border: 2vw solid green;
+    display: flex;
+    height: 90vh;
+    padding: 5vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-words{
+    width: 40%;
+}
+
+
+.features{
+    border:1vw solid black;
+    padding: 5vw;
+}
+
+.feature-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+}
+
+.box-for-feature{
+    height: 20vh;
+    border: 2px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+/* This is the stylus support section */
+.support-product{
+    border: 10px solid pink;
+    display: flex;
+    min-height:50vh ;
+    padding: 5vw;
+    justify-content: space-between;
+}
+
+.support-product-words{
+    width: 40%;
+   min-height: 30vh;
+    border:2px solid green;
+}
+
+.support-product-image{
+    width: 50%;
+    min-height: 40vh;
+    border: 1vw solid red;
+}
+
+
+.images-of-devices{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    padding: 5vw;
+    border:2px solid blue;
+}
+
+.devices{
+    flex:1;
+    height: 50vh;
+    border: 2px solid black;
+}
+
+
+.other-hero{
+    height: 60vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:2vw solid blue;
+}
+
+
+.categories-for-products{
+    display:flex;
+    justify-content:space-around;
+    padding:3vw;
+}
+
+.category-for-products{
+    width:25%;
+    height:15vh;
+    border:9px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.scroll{
+    border: 2vw solid greenyellow;
+    display:flex;
+    gap:2vw;
+    padding:3vw;
+}
+
+.scroll-image{
+    min-width:250px;
+    height:30vh;
+    border:1vw solid black;
+}
+
+.headset{
+    border: 1vw solid yellow;
+    display:flex;
+    justify-content:space-around;
+    padding:3vw;
+}
+
+.headset > div{
+    border: 1vw solid green;
+    width: 20vw;
+min-height: 50vh;
+}
+
+
+.bundle{
+    display:flex;
+    padding:5vw;
+    justify-content:space-between;
+}
+
+.bundle-words{
+    border:3px solid blue;
+    width:40%;
+    
+}
+
+.bundle-image{
+    width:50%;
+    height:50vh;
+    border:2px solid black;
+}

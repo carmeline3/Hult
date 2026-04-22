@@ -1,0 +1,86 @@
+
+/* This is for the buying page */
+.hero-for-buying{
+    height:60vh;
+    display:flex;
+    justify-content:center;
+    border:2px solid black;
+}
+
+/* This is for the categories boxes */
+.categories{
+    border:7px solid green;
+    display:flex;
+    justify-content:space-around;
+    padding:3vw;
+}
+
+.category-box{
+    width:20%;
+    height:15vh;
+    border:2px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+
+
+
+.products-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:3vw;
+    padding:5vw;
+}
+
+.product-box{
+    border:2px solid black;
+    padding:2vw;
+    text-align:center;
+    min-height:50vh;
+}
+
+
+
+
+.partners{
+    border: 3px solid gold;
+    min-height: 80vh;
+    padding:5vw;
+    text-align:center;
+}
+
+.partner-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2vw;
+    margin-top:2vw;
+}
+
+.partner{
+   min-height:40vh;
+    border:2px solid black;
+}
+
+
+.world{
+    border: 9px solid green;
+    display:flex;
+    justify-content:space-between;
+    padding:5vw;
+    align-items:center;
+}
+
+.world-text{
+    width:40%;
+    border:2px solid yellow;
+    min-height: 30vh;
+}
+
+.world-map{
+    width:50%;
+    height:40vh;
+    border:2px solid black;
+}

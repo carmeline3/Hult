@@ -1,0 +1,94 @@
+.services-hero{
+    height: 60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    border-bottom:2px solid black;
+}
+
+
+.services{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2vw;
+    padding:5vw;
+}
+
+.box-for-services{
+    height:20vh;
+    border:2px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+
+
+.services-details{
+    border:4px solid purple;
+    display:flex;
+    padding:5vw;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.service-detail2{
+    display:flex;
+    padding:5vw;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items:center;
+    border: 3px solid gold;
+}
+
+.service-detail3{
+    border:4px solid purple;
+   display:flex;
+    padding:5vw;
+    justify-content:space-between;
+    flex-direction:row-reverse;
+    align-items:center;
+}
+
+.detail-text{
+    border: 2px solid blue;
+    width:40%;
+    min-height: 20vh;
+}
+
+.detail-image{
+    width:50%;
+   min-height:30vh;
+    border:2px solid black;
+}
+
+
+
+.together{
+    height: 40vh;
+    padding:5vw;
+    text-align:center;
+    border:6px solid purple;
+}
+
+.together-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2vw;
+    margin-top:3vw;
+}
+
+
+.link{
+    border:2px solid black;
+    padding:1vw;
+    min-height: 8vh;
+    width:15vw;
+}
+
+
+
+

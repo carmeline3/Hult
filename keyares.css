@@ -1,0 +1,37 @@
+/* KEY FOCUS AREAS PAGE */
+
+#keyareas-header{
+    border: 0.3vw solid red;
+    width: 100%;
+    min-height: 50vh;
+    text-align: center;
+    padding-top: 20vh;
+
+}
+
+#keyareas-main{
+    border: 0.3vw solid orangered;
+    width: 100%;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.keyareas-card{
+    width: 100%;
+    min-height: 50vh;
+    border: 0.3vw solid yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.keyareas-card p {
+    border: 0.3vw solid green;
+    width: 45%;
+    min-height: 60vh;
+    margin: 5vh auto;
+}

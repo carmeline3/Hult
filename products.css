@@ -160,6 +160,11 @@
     padding: 5vw;
     align-items: center;
     justify-content: space-between;
+    background-image:url(Galaxyzflip5G\ GIF\ by\ Samsung\ Austria.gif) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
 
 .hero-words{

@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
+  
+}
+
+body{
+    background-color: #0f0f0f;
 }
 
 /* This section is the header and the navbar as well  */
@@ -9,17 +15,146 @@ header{
     border:3px solid pink;
     min-height: 100vh;
     width: 100%;
+    
 }
 
 
 nav{
     border:3px solid black;
-    min-height: 10vh;
-    width: 100%;
+    min-height:18vh;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+    background-color:rgb(0, 0, 0);
+    
 }
 
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    font-weight:500;
+    letter-spacing:1px;
+    padding:10px 12px;
+    transition: 0.3s ease;
+}
+
+nav a:hover{
+    background-color:#0f0f0f;
+    color:white;
+    border-radius:5px;
+    
+}
+
+
+.iphone1, .iphone2, .iphone3, .iphone4,.iphone5{
+    border: 3px solid purple;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     position: relative; 
+
+}
+
+.iphone1{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Carmeline images/images for the home/daniel-romero-q-RQba-XCgU-unsplash.jpg");
+ height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;}
+
+.iphone2{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Carmeline images/images for the home/photo-1622531636820-5d727319e45d.avif");
+ height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+  .iphone3{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Carmeline images/images for the home/NV.avif");
+ height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+  .iphone4{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Carmeline images/images for the home/photo-1525547719571-a2d4ac8945e2.avif");
+ height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+
+  .iphone5{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("Carmeline images/images for the home/photo-1603351154351-5e2d0600bb77.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+background-position: center;
+}
+
+
+
+.iphone1, .iphone2, .iphone3, .iphone4,.iphone5, h1, p, button{
+     position: relative;
+  z-index: 2;        
+  color: white;
+}
+.iphone1 > button{
+ min-height: 6vh;
+ width: 10%;
+ border-radius: 30px;
+ font-size: 15px;
+}
+
+.iphone2 > button{
+ min-height: 6vh;
+ width: 10%;
+ border-radius: 30px;
+ font-size: 15px;
+}
+
+.iphone3 > button{
+ min-height: 6vh;
+ width: 10%;
+ border-radius: 30px;
+ font-size: 15px;
+}
+
+.iphone4 > button{
+ min-height: 6vh;
+ width: 10%;
+ border-radius: 30px;
+ font-size: 15px;
+}
+
+.iphone5 > button{
+ min-height: 6vh;
+ width: 10%;
+ border-radius: 30px;
+ font-size: 15px;
+}
+
+.iphone >h2{
+    font-size: 45px;
+}
+
+.iphone >p{
+    font-size: 30px;
+}
+
+
 /* This is the main section of the overview also called the index.html */
-.overview1, .overview2, .overview3{
+.overview1, .overview2, .overview3, .overview4, .overview5{
     border:4px solid #008000;
     min-height: 100vh;
     width: 100%;
@@ -31,16 +166,43 @@ nav{
     gap: 2vw;
 }
 
-.overview-paragraph1, .overview-paragraph2, .overview-paragraph3{
+.overview-paragraph1, .overview-paragraph2, .overview-paragraph3, .overview-paragraph4, .overview-paragraph5{
     border: 3px solid orange;
     width: 40%;
     min-height: 400px;
 }
 
-.overviewimg1, .overviewimg2, .overviewimg3{
+.overviewimg1, .overviewimg2, .overviewimg3, .overviewimg4, .overviewimg5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 3px solid red;
     width: 50%;
     min-height: 500px;
+}
+
+.overviewimg1> img{
+max-width: 46vw;
+min-height:68vh
+}
+.overviewimg2> img{
+max-width: 100vw;
+min-height:65vh
+}
+
+.overviewimg3> img{
+max-width: 190vw;
+min-height:75vh
+}
+
+.overviewimg4> img{
+max-width: 46vw;
+height:69vh
+}
+
+.overviewimg5> img{
+max-width: 46vw;
+height:69vh
 }
 
 
@@ -192,6 +354,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 }
 
 .footer-sections-all{
@@ -199,12 +362,14 @@ footer{
     border: 0.2vw rgb(189, 65, 86) solid;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+     background-color: black;
 }
 
 .footer-sections{
     width: 30vw;
     border: 0.2vw solid red;
     align-self: baseline;
+    background-color: black;
 }
 
 .copyright{

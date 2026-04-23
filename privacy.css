@@ -1,3 +1,5 @@
+
+
 .hero-for-security{
     height:60vh;
     display:flex;
@@ -8,6 +10,10 @@
     border:5px solid black;
 }
 
+.hero-for-security> img{
+    min-width:100vh;
+    height:60vh;
+}
 
 .security-scroll{
      border:5px solid pink;
@@ -79,6 +85,10 @@ border:2vh solid green;
     border:2px solid black;
 }
 
+.detail-img >img{
+max-width: 43.5vw;
+height: 50vh;
+}
 
 .protection{
     padding:5vw;

@@ -7,6 +7,10 @@
     border:2px solid black;
     flex-direction: column;
     align-items: center;
+    background-image:url(b.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* This is for the categories boxes */
@@ -44,8 +48,21 @@
     min-height:50vh;
 }
 
+.product-box-images{
+    border:2px solid green;
+    min-height: 50vh;
+    width:30vw;
+}
 
+.product-box-images> img{
+    min-width: 20vw;
+   min-height: 20vw;
+}
 
+.product-grid> button{
+height: 50px; 
+width:20vw;
+}
 
 .partners{
     border: 3px solid gold;

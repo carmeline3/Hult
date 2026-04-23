@@ -1,13 +1,13 @@
 
 /* This is for the buying page */
 .hero-for-buying{
-    height:60vh;
+    height:100vh;
     display:flex;
     justify-content:center;
     border:2px solid black;
     flex-direction: column;
     align-items: center;
-    background-image:url(b.jpg) ;
+    background-image:url(bann.jpg) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

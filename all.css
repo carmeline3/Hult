@@ -56,6 +56,7 @@ nav a:hover{
     align-items: center;
     flex-direction: column;
      position: relative; 
+     line-height:8vh;
 
 }
 
@@ -104,46 +105,58 @@ background-position: center;
 
 
 
-.iphone1, .iphone2, .iphone3, .iphone4,.iphone5, h1, p, button{
+.iphone1, .iphone2, .iphone3, .iphone4,.iphone5, h1, p{
      position: relative;
   z-index: 2;        
   color: white;
+  /* font-size: 20px; */
+  padding-top: 40px;
+ 
 }
 .iphone1 > button{
- min-height: 6vh;
- width: 10%;
+ min-height: 8vh;
+ width: 15%;
  border-radius: 30px;
  font-size: 15px;
+ color: black;
+
 }
 
 .iphone2 > button{
- min-height: 6vh;
- width: 10%;
+ min-height: 8vh;
+ width: 15%;
  border-radius: 30px;
  font-size: 15px;
+ color: black;
+
 }
 
 .iphone3 > button{
- min-height: 6vh;
- width: 10%;
+ min-height: 8vh;
+ width: 15%;
  border-radius: 30px;
  font-size: 15px;
+ color: black;
+
 }
 
 .iphone4 > button{
- min-height: 6vh;
- width: 10%;
+ min-height: 8vh;
+ width: 15%;
  border-radius: 30px;
  font-size: 15px;
+ color: black;
+
 }
 
 .iphone5 > button{
- min-height: 6vh;
- width: 10%;
+ min-height: 8vh;
+ width: 15%;
  border-radius: 30px;
  font-size: 15px;
-}
+ color: black;
 
+}
 .iphone >h2{
     font-size: 45px;
 }

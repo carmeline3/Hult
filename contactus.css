@@ -1,8 +1,22 @@
 
 /* CONTACT US PAGE */
 
+body{
+    background-image: radial-gradient(circle, rgb(16, 16, 16), rgb(80, 78, 78));
+    background-size:200% 200%;
+    animation: movingBackground 30s ease 0s infinite alternate-reverse forwards ;
+}  
+
+@keyframes movingBackground {
+    0%{background-position: 0% 50%;}
+    20%{background-position: 50% 100%;}
+    40%{background-position: 100% 150%;}
+    60%{background-position: 150% 100%;}
+    80%{background-position: 100% 50%;}
+    100%{background-position: 50% 0%;}
+}
+
 #main-contactus{
-    border: 0.2vw solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -12,6 +26,14 @@
 
 }
 
+#main-contactus h1{
+    font-family: "Share Tech Mono";
+    font-size: 4vw;
+    color: rgb(25, 23, 23);
+}
+
+
+
 .contact-all{
     border: 0.2vw solid rgb(207, 96, 115);
     display: flex;
@@ -20,18 +42,50 @@
     align-items: center;
     width: 80vw;
     min-height: 40vh;
+    background-color: rgba(185, 185, 184, 0.289);
+    border: hidden;
+    border-radius: 2vw;
+    padding:10vh 0;
 }
 
+
 .contact-form{
-    border: 0.2vw cornflowerblue solid;
     width: 40%;
     min-height: 30vh;
     text-align: center;
+    transition: 0.6s transform ease, 0.6s box-shadow ease;
+    font-family: "Exo 2";
+    border: hidden;
+    border-radius: 3vw;
+    line-height: 5vh;
+    letter-spacing: 0.2vw;
+}
+
+fieldset{
+    border: none;
+}
+
+.contact-form:hover{
+    transform: scale(1.1);
+    box-shadow: rgb(123, 120, 120) 1vw 1vh 8vw 1vh;
+
 }
 
 .contact-types{
-    border: 0.2vw cornflowerblue solid;
     width: 40%;
     min-height: 30vh;
     text-align: center;
+    transition: 0.6s transform ease, 0.6s box-shadow ease;
+    font-family: "Exo 2";
+    border: hidden;
+    border-radius: 3vw;
 }
+
+
+
+.contact-types:hover{
+    transform: scale(1.1);
+    box-shadow: rgb(123, 120, 120) 1vw 1vh 8vw 1vh;
+
+}
+

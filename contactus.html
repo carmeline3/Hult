@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT US</title>
-     <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="contactus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   
 </head>
 <body>
@@ -27,17 +30,68 @@
 
 
     <main id="main-contactus">
-
-        <h1>CONTACT US</h1>
+        
+        <h1>Tell Us Your Thoughts</h1>
 
         <div class="contact-all">
 
             <div class="contact-form">
-                <p>Contact Form</p>
+
+                <form action="">
+                    <fieldset>
+                        <label for="name">Your Name </label><br>
+                        <input type="text" id="name" required placeholder="e.g. Jane Doe">
+                        <br>
+                        <label for="email">Your Email </label><br>
+                        <input type="email" id="email" placeholder="e.g. janedoe@mail.com" required>
+                        <br>
+                        <label for="inquiry">Choose your inquiry type</label><br>
+                        <select name="inquiry-type" id="inquiry">
+                            <option value="choose">Choose</option>
+                            <option value="question">General Question</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="suggestion">Suggestion</option>
+                        </select><br>
+
+                        <label for="message">Type your message here: </label><br>
+                        <textarea name="message" id="message"></textarea><br>
+
+                        <button type="submit">SEND!</button>
+
+                    </fieldset>
+
+                </form>
+
             </div>
 
             <div class="contact-types">
-                <p>Social media links, email, number</p>
+
+
+                <h2>Find Us On The Cloud</h2>
+                <div class="contact-info stuff">
+                <p class="hitlure-email">Email: info@hitlurecell.co.za</p>
+                <p>Call: 011 365 9565</p>
+                </div>
+
+                <div class="social-media-links">
+                    <a href="">
+                        <!-- Sanje can I throw you under the bus here? -->
+                        <img src="Nissi/img/SVGs/cib--instagram.svg" alt="Link to Instagram page">
+                    </a>
+
+                    <a href="">
+                        <img src="Nissi/img/ic--baseline-facebook.svg" alt="Link to Facebook page">
+                    </a>
+
+                    <a href="">
+                        <img src="Nissi/img/line-md--twitter-x.svg" alt="Link to X page">
+                    </a>
+
+                </div>
+
+
             </div>
 
         </div>

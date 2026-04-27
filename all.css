@@ -10,6 +10,22 @@ body{
     background-color: #0f0f0f;
 }
 
+/* FONTS */
+
+.exo-2 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.share-tech-mono-regular {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /* This section is the header and the navbar as well  */
 header{
     border:3px solid pink;
@@ -362,12 +378,12 @@ border: 2px solid purple;
 footer{
     width: 100%;
     min-height: 50vh;
-    border: 0.3vw solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
    
+    background-color: rgb(40, 40, 40);
 }
 
 .footer-sections-all{

@@ -6,6 +6,7 @@
     width: 100%;
     min-height: auto;
     border: 0.3vw solid red;
+    
 }
 
 #smartphones h1{
@@ -13,6 +14,7 @@
     width: 100%;
     min-height:20vh;
     padding-top: 7vh;
+    
 }
 
 .smart-card{
@@ -160,6 +162,11 @@
     padding: 5vw;
     align-items: center;
     justify-content: space-between;
+    background-image:url(Galaxyzflip5G\ GIF\ by\ Samsung\ Austria.gif) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
 
 .hero-words{

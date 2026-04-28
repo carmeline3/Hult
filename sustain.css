@@ -1,50 +1,93 @@
 /* SUSTAINABILITY PAGE */
+body{
+    background-color: rgb(16, 16, 16);
+    border: none;
+    box-shadow: none;
+    
+}
 
 #sustain-header{
-    border: 0.3vw solid red;
     width: 100%;
     min-height: 200vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border: #c1fb5dc0 solid 0.2vw;
+    box-shadow: #b7db7b 0 0 1.5vw 1.5vw;
+    animation: glowingBox 3s ease 2s backwards alternate;
 }
+
+@keyframes glowingBox {
+    from{border: none;box-shadow: none;}
+    to{border: #c1fb5dc0 solid 0.2vw;box-shadow: #b7db7b 0 0 1.5vw 1.5vw;}
+}
+
 
 #sustain-header h1{
     text-align: center;
+    font-family:"Share Tech Mono";
+    font-weight: 900;
+    font-size: 4vw;
+    color:#b6c59c;
+    letter-spacing: 1vw;
     
 }
 
 #sustain-header .desc{
     text-align: center;
+    font-family: "Exo 2";
+    font-size: 1.6vw;
+    color:#c4c3c3;
+    width:70%
     
 }
 
-.main-img-header{
-    border: orangered solid 0.3vw;
-    width: 90%;
-    min-height: 100vh;
-    margin-top: 20vh;
-    text-align: center;
+.laptop-sustain{
+    transform: scale(1.8);
+    position: relative;
+    top: -40vh;
 }
 
 .recyclable{
-    border: 0.3vw solid yellow;
+    border: hidden;
     border-radius: 50%;
+    box-shadow: #b7db7b 0 0 0.7vw 0.7vw;
     width: 10vw;
     min-height: 10vw;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5vh;
     position:absolute;
+    font-family: "Exo 2";
+    line-height: 4vh;
+    background-color: #b6c59c;
 }
 
 .one{
-    top: 110vh;
-    left: 20vw;
+    top: 75vh;
+    left: 10vw;
+    border-radius: 50%;
+}
+
+.line-one{
+    position: absolute;
+    transform: scaleX(11) scaleY(8) rotate(25deg);
+    top: 90vh;
+    left: 27vw;
 }
 
 .two{
-    top: 160vh;
+    top: 167vh;
+    left: 71.5vw;
+}
+
+.line-two{
+    position: absolute;
+    transform: scaleX(11) scaleY(8) rotate(250deg);
+    top: 153vh;
     left: 70vw;
 }
 
@@ -53,9 +96,24 @@
     left: 15vw;
 }
 
+.line-three{
+    position: absolute;
+    transform: scaleX(11) scaleY(8) rotate(-35deg);
+    top: 147vh;
+    left: 30vw;
+}
+
 .four{
-    top: 100vh;
-    left: 65vw;
+    top: 87vh;
+    left: 80vw;
+}
+
+.line-four{
+    position: absolute;
+    transform: scaleX(11) scaleY(8) rotate(-187deg);
+    top: 97vh;
+    left: 70vw;
+
 }
 
 #main-sustain{
@@ -66,7 +124,6 @@
 #eco-friendly{
     width: 100%;
     min-height: fit-content;
-    border: 0.3vw solid green;
     margin-top: 7vh;
     text-align: center;
     position: relative;

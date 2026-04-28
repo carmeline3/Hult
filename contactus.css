@@ -79,6 +79,9 @@ fieldset{
     font-family: "Exo 2";
     border: hidden;
     border-radius: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
@@ -88,4 +91,37 @@ fieldset{
     box-shadow: rgb(123, 120, 120) 1vw 1vh 8vw 1vh;
 
 }
+
+.social-media-links a{
+    text-decoration: none;
+    margin: auto 1vw;
+}
+
+input[type=text], input[type=email], textarea, button{
+    font-family: "Exo 2";
+    outline: none;
+    background-color: #c4c3c3;
+    border: hidden;
+    border-radius: 0.2vw;
+}
+
+select{
+    font-family: "Exo 2";
+    background-color: #c4c3c3;
+    border: hidden;
+    border-radius: 0.2vw;
+    outline:none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 

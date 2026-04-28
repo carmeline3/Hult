@@ -1,10 +1,21 @@
 .services-hero{
-    height: 60vh;
+    min-height: 60vh;
+width:100vw;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
     border-bottom:2px solid black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Carmeline images/amanz-7mMvHZePkT8-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.hero-text> p{
+font-size:20px;
 }
 
 
@@ -22,8 +33,28 @@
     align-items:center;
     justify-content:center;
     
+  height: 20vh;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: black;
 }
 
+
+.box-for-services:hover {
+    background-color: rgb(134, 135, 135);
+    transform: scale(1.05);
+  
+}
+
+
+.box-for-services>h2{
+    font-weight: bold;
+    font-size: 20px;
+}
 
 
 .services-details{
@@ -33,6 +64,7 @@
     justify-content:space-between;
     align-items:center;
 }
+
 
 .service-detail2{
     display:flex;
@@ -58,10 +90,24 @@
     min-height: 20vh;
 }
 
+.detail-text>p{
+    font-size: 20px;
+}
+
+.detail-text>h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
 .detail-image{
     width:50%;
    min-height:30vh;
     border:2px solid black;
+}
+
+.detail-image> img{
+    max-width: 45vw;
+    min-height: 20vh;
 }
 
 
@@ -74,9 +120,8 @@
 }
 
 .together-links{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap:2vw;
     margin-top:3vw;
 }
@@ -84,11 +129,41 @@
 
 .link{
     border:2px solid black;
-    padding:1vw;
+    /* padding:1vw; */
     min-height: 8vh;
     width:15vw;
+    background-color: rgb(9, 9, 9);
 }
 
 
 
 
+@media(max-width:920px){
+    .hero-text> p{
+font-size:15px;
+}
+}
+@media(max-width:720px){
+    .hero-text> p{
+font-size:12px;
+}
+
+
+.box-for-services>h2{
+    font-size: 13px;
+}
+
+.detail-image> img{
+    max-width: 45vw;
+    min-height: 25vh;
+}
+
+.together-links{
+  
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.link{
+    width:25vw;
+}
+}

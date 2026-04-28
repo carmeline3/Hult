@@ -1,3 +1,5 @@
+
+
 .hero-for-security{
     height:60vh;
     display:flex;
@@ -6,8 +8,18 @@
     align-items:center;
     text-align:center;
     border:5px solid black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Carmeline images/Privacy images/photo-1633265486064-086b219458ec.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+   
 }
 
+.hero-for-security> img{
+    min-width:100vh;
+    height:60vh;
+}
 
 .security-scroll{
      border:5px solid pink;
@@ -25,8 +37,16 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    
+  transition:  0.3s ease;
+    background-color:black;
 }
+
+ .security-box:hover{ transform: translateY(-5px); 
+    box-shadow: 0 0 15px rgba(158, 165, 165, 0.6),
+                0 0 30px rgba(94, 98, 98, 0.4),
+                0 0 45px rgba(226, 228, 228, 0.2);
+    border-color:white;}
+
 
 
 .security-detail{
@@ -79,6 +99,10 @@ border:2vh solid green;
     border:2px solid black;
 }
 
+.detail-img >img{
+max-width: 44.5vw;
+height: 50vh;
+}
 
 .protection{
     padding:5vw;
@@ -88,15 +112,38 @@ border:2vh solid green;
 .layers{
     display:flex;
     justify-content:center;
+    align-items: center;
+    flex-direction: row;
     gap:2vw;
     margin-top:2vw;
 
 
 }
 
-.layer{
+.layer {
+    display:flex;
+    justify-content:center;
+    align-items: center;
     border:2px solid black;
-    min-height: 8vh;
+    min-height: 10vh;
     width:20vw;
     border-radius: 30px;
+    transition:  0.3s ease;
+    background-color:black;
+}
+
+
+.layer:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 0 15px rgba(158, 165, 165, 0.6),
+                0 0 30px rgba(94, 98, 98, 0.4),
+                0 0 45px rgba(226, 228, 228, 0.2);
+    border-color:white;
+}
+.layer>p{
+    margin-bottom: 25px;
+}
+
+.layer:hover p{
+    color:rgb(67, 144, 180);
 }

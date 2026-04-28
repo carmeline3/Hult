@@ -1,13 +1,53 @@
 
 /* This is for the buying page */
 .hero-for-buying{
-    height:60vh;
+    min-height:120vh;
     display:flex;
     justify-content:center;
     border:2px solid black;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    /* padding-left: 10vh; */
+    background-image:url(Carmeline\ images/bann.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
+
+.buy-text{
+    border:2px solid green;
+    width:50vw;
+    min-height: 50vh;
+    margin-left: 130px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+
+.buy-text > button {
+    margin-top: 20px;
+    min-height: 5vh;
+    width:10vw;
+    border-radius: 20px;
+    background-color:black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.buy-text > button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 10px #23f403,
+                0 0 25px #24dc04,
+                0 0 40px #03eb63;
+}
+
+
 
 /* This is for the categories boxes */
 .categories{
@@ -24,9 +64,22 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    
+     transition: 0.3s ease;
+    cursor: pointer;
+    background-color: black;
+    z-index:2;
 }
 
+.category-box {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.category-box:hover{ transform: translateY(-5px); 
+    box-shadow: 0 0 15px rgba(158, 165, 165, 0.6),
+                0 0 30px rgba(94, 98, 98, 0.4),
+                0 0 45px rgba(226, 228, 228, 0.2);
+    border-color:white;}
 
 
 
@@ -39,13 +92,80 @@
 
 .product-box{
     border:2px solid black;
+    background-color: rgb(19, 18, 18);
     padding:2vw;
     text-align:center;
     min-height:50vh;
+     transition: transform 0.3s ease;
+     
+}
+
+.product-box:hover {
+    transform: translateY(-10px);
+    
+}
+
+.product-box-images{
+    border:2px solid green;
+    min-height: 50vh;
+    width:30vw;
+}
+
+.product-box-images> img{
+    min-width: 20vw;
+   min-height: 20vw;
+   
+}
+
+.tex > button {
+    width:15vw;
+    min-height: 7vh;
+    border-radius: 20px;
+    color:rgb(152, 147, 147);
+    cursor: pointer;
+    border: 2px solid rgb(96, 94, 94);
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    font-weight: bold;
+     
 }
 
 
+.tex > button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: 0.4s ease;
+    z-index: -1;
+}
 
+.tex > button:hover::before {
+    left: 0;
+}
+
+.tex > button:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+ .fa-star {
+    color: white;
+}
+
+.checked{
+    color:gold;
+}
+
+.product-grid> button{
+height: 50px; 
+width:20vw;
+}
 
 .partners{
     border: 3px solid gold;
@@ -61,6 +181,11 @@
     margin-top:2vw;
 }
 
+.partner> img{
+    border: 2px solid red;
+max-width: 20vw;
+min-height: 30vh;
+}
 .partner{
    min-height:40vh;
     border:2px solid black;
@@ -85,4 +210,117 @@
     width:50%;
     height:40vh;
     border:2px solid black;
+}
+
+.world-map>img{
+    min-height: 10vh;
+    max-width: 80%;
+}
+
+
+#more{
+    border: 0.3vw solid purple;
+    width: 100%;
+    min-height: auto;
+}
+
+#more h1{
+    text-align: center;
+    width: 100%;
+    min-height:20vh;
+    padding-top: 7vh;
+}
+
+#more-devices{
+    border: 0.3vw solid red;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: scroll;
+    gap:20px;
+}
+
+.moree{
+    border: 0.3vw solid red;
+    width: 20%;
+    min-height: 70vh;
+    flex-shrink: 0;
+}
+
+.moree>img{
+    width: 100%;
+    min-height:70vh ;
+}
+
+
+.icons{
+    border:2px soild rgb(246, 5, 246);
+    min-height: 30vh;
+    width:100vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.icon-box{
+    width:40vh;
+    min-height: 20vh;
+    border: 2px solid silver;
+    
+}
+
+
+fa fa-credit-card{
+    color:blue;
+}
+
+@media(max-width:1190px){
+    .products-grid{
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.hero-for-buying{
+    width: 100%;
+}
+
+.tex>button{
+min-height: 5vh;
+}
+
+}
+@media(max-width:920px){
+    .products-grid{
+    grid-template-columns: repeat(1, 1fr)
+}
+
+
+.moree{
+    
+    width: 50%;
+}
+
+
+.tex>button{
+min-height: 5vh;
+width:50%;
+}
+}
+
+@media(max-width:320px){
+    .product-box{
+    width:30%;
+    min-height: 20vh;
+    padding-right: 0px;
+}
+
+.product-box>img{
+    width:80%;
+    min-height: 40vh;
+}
+
 }

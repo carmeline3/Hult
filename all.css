@@ -435,6 +435,10 @@ footer{
     margin: 2vh auto;
 }
 
+.footer-sections p{
+    padding: 0;
+}
+
 .copyright{
     align-self: center;
     margin: 2vh auto;

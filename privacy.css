@@ -21,24 +21,71 @@
     height:60vh;
 }
 
+.hero-for-security>h1{
+    font-size: 60px;
+}
+
+.hero-for-security>p{
+    font-size: 30px;
+}
+
+
 .security-scroll{
      border:5px solid pink;
      min-height:100vh;
     display:flex;
     align-items: center;
    justify-content: space-evenly;
+ animation: rotate-bg-color 10s infinite;
+}
+
+@keyframes rotate-bg-color {
+  0% {
+    background-color: rgb(80, 82, 84);
+  }
+  10% {
+    background-color: rgb(4, 4, 4);
+  }
+  20% {
+    background-color: rgb(7, 6, 4);
+  }
+  30% {
+    background-color: rgb(7, 7, 6);
+  }
+  40% {
+    background-color: rgb(65, 70, 65);
+  }
+  50% {
+    background-color: rgb(6, 6, 6);
+  }
+  60% {
+    background-color: rgb(20, 20, 21);
+  }
+  70% {
+    background-color: rgb(22, 21, 22);
+  }
+  80% {
+    background-color: rgb(30, 30, 30);
+  }
+  90% {
+    background-color: rgb(14, 14, 14);
+  }
+  100% {
+    background-color: black;
+  }
 }
 
 .security-box{
      border:5px solid purple;
      width: 20%;
-    min-height:60vh;
+    min-height:40vh;
     border:2px solid black;
     display:flex;
     align-items:center;
     justify-content:center;
   transition:  0.3s ease;
     background-color:black;
+    font-size: 25px;
 }
 
  .security-box:hover{ transform: translateY(-5px); 
@@ -93,6 +140,16 @@ border:2vh solid green;
     min-height: 40vh;
 }
 
+
+.detail-text>h2{
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.detail-text>p{
+    font-size: 30px;
+    
+}
 .detail-img{
     width:50%;
     height:50vh;
@@ -107,6 +164,15 @@ height: 50vh;
 .protection{
     padding:5vw;
     text-align:center;
+}
+
+.protection>h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.protection>p{
+    font-size: 30px;
 }
 
 .layers{
@@ -142,8 +208,71 @@ height: 50vh;
 }
 .layer>p{
     margin-bottom: 25px;
+
 }
 
 .layer:hover p{
     color:rgb(67, 144, 180);
+}
+
+@media(max-width:920px){
+    .security-box{
+        min-height:25vh;
+        font-size: 12px;
+    }
+
+    .detail-text>h2{
+    font-size: 26px;
+    font-weight: bolder;
+   
+}
+
+.detail-text>p{
+    font-size: 21px;
+    
+}
+    
+
+}
+
+@media(max-width:520px){
+    .security-box{
+        min-height:20vh;
+        width:25vw;
+        font-size: 10px;
+    }
+
+
+    .security-scroll{
+    min-height: 70vh;
+}
+
+.detail-text>h2{
+    font-size: 21px;
+    font-weight: bolder;
+   
+}
+
+.detail-text>p{
+    font-size: 20px;
+    
+}
+
+.protection>h2{
+    font-size: 25px;
+}
+
+.protection>p{
+    font-size: 20px;
+}
+
+.layer{
+    width: 23vw;
+    min-height: 6vh;
+}
+
+.layer>p{
+    padding-top: 12px;
+    font-size: 8px;
+}
 }

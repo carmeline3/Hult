@@ -1,6 +1,6 @@
 .services-hero{
     min-height: 60vh;
-width:100vw;
+width:99vw;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -11,11 +11,15 @@ width:100vw;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+  
 }
 
 
+.hero-text> h1{
+font-size:45px;
+}
 .hero-text> p{
-font-size:20px;
+font-size:25px;
 }
 
 

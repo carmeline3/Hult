@@ -154,12 +154,16 @@
 
 /* This is the section for the features of the products */
 .hero-for-products{
-    border: 2vw solid green;
+     border: 2vw solid green;
     display: flex;
     height: 90vh;
     padding: 5vw;
     align-items: center;
     justify-content: space-between;
+    background-image:url(Carmeline\ images/Galaxyzflip5G\ GIF\ by\ Samsung\ Austria.gif) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-words{
@@ -223,13 +227,20 @@
     border: 2px solid black;
 }
 
+.devices>img{
+    max-width: 30vw;
+    min-height:vh ;
+}
+
 
 .other-hero{
-    height: 60vh;
+    height: 100vh;
+    width: 100%;
     display:flex;
     justify-content:center;
     align-items:center;
     border:2vw solid blue;
+    background-image: url("Carmeline\ images/hero__bsveixlwbms2_xlarge.jpg");
 }
 
 

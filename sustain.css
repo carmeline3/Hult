@@ -124,60 +124,47 @@ body{
 #eco-friendly{
     width: 100%;
     min-height: fit-content;
-    margin-top: 7vh;
+    margin-top: 1vh;
     text-align: center;
     position: relative;
+    font-family: "Exo 2";
+    z-index: -1;
 }
 
-#sustain-intro{
-    border: 0.3vw solid blue;
-    width: 100%;
-    min-height: 50vh;
-
-}
 
 .eco-friendly-top{
-    border: 0.3vw solid orchid;
     width: 100%;
     min-height: 50vh;
-}
-
-.eco-friendly-left{
-    border: 0.3vw solid orchid;
-    width: 50%;
-    min-height: 50vh;
+    color: #b6c59c;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5vh;
+
 }
 
-.eco-friendly-left p{
-    border: 0.3vw solid purple;
+.eco-friendly-top img{
+    width: 17vw;
+    height: auto;
 }
 
-.eco-friendly-right{
-    border: 0.3vw solid orchid;
-    width: 50%;
-    min-height: 50vh;
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    top: 100vh;
-    left: 50%;
+.eco-friendly-top p{
+    width: 60%;
+    text-align: center;
+    padding: 4vw;
+    font-size: 2vw;
 }
 
-.eco-friendly-right p{
-    border: 0.3vw solid purple;
-    
-}
+
 
 .eco-friendly-bottom{
-    border: 0.3vw solid orchid;
     width: 100%;
     min-height: 50vh;
     display: flex;
     justify-content: space-around;
-    
+    color: #b6c59c;
+    margin-top: 10vh;
+
 }
 
 .eco-friendly-bottom p{
@@ -186,28 +173,49 @@ body{
 }
 
 .eco-friendly-bottom div{
-    border: 0.3vw solid purple;
     margin-top: 10vh;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding: 1vw;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+hr{
+    border: none;
+    background-color: #b6c59c;
+    height: 0.1vh;
+    width: 15vw;
 }
 
 #carbon-reduction {
-    border: 0.3vw solid red;
     width: 100%;
     min-height: 65vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 5vh;
 }
 
 #carbon-graph{
-    border: 0.3vw solid orangered;
     width: 45%;
     min-height: 60vh;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #carbon-info{
-    border: 0.3vw solid orangered;
-    width: 45%;
+    width: 55%;
     min-height: 60vh;
+    text-align: center;
+    padding: 20vh;
+    font-family: "Exo 2";
+    color: #b6c59c;
+
 }

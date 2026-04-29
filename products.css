@@ -265,13 +265,10 @@
     display:flex;
     gap:2vw;
     padding:3vw;
+    
 }
 
-.scroll-image{
-    min-width:250px;
-    height:30vh;
-    border:1vw solid black;
-}
+
 
 .headset{
     border: 1vw solid yellow;

@@ -144,9 +144,9 @@ h1,
 p {
     position: relative;
     z-index: 2;
-    color: white;
+    /* color: white;
     font-size: 25px;
-    padding-top: 40px;
+    padding-top: 40px; */
 
 }
 button a{
@@ -350,6 +350,7 @@ font-size: 15px;
     .iphone5>button {
         width: 50%;
     }
+    
 }
 
 @media(max-width:768px) {

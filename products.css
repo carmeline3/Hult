@@ -1,152 +1,65 @@
 /* This is Nissi's section */
 
-/* Smartphones */
-
-#smartphones{
-    width: 100%;
-    min-height: auto;
-    border: 0.3vw solid red;
-}
-
-#smartphones h1{
-    text-align: center;
-    width: 100%;
-    min-height:20vh;
-    padding-top: 7vh;
-}
-
-.smart-card{
-    border: 0.3vw solid orangered;
-    width: 100%;
-    min-height: 50vh;
-    margin: 5vh auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-
-.smart-card p{
-    width: 40%;
-    min-height: 80%;
-    border: 0.3vw solid yellow;
-    text-align: center;
-    padding-top: 15vh;
-}
-
-#smartphone-features{
-    border: 0.3vw solid green;
-    width: 100%;
-    min-height: 65vh;
-    
-}
-
-#smartphone-features h2{
-    text-align: center;
-    width: 100%;
-    min-height:15vh;
-    padding-top: 5vh;
-}
-
-#feature-scroll-phone{
-    border: 0.3vw solid blue;
-    width: 100%;
-    min-height: 75%;
-    overflow-x: scroll;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    position: relative;
-}
-
-#feature-scroll-phone #title{
-    text-align: center;
-    width: 90%;
-    min-height:15vh;
-    padding-top: 5vh;
-    position: relative;
-    align-self: baseline;
-
-}
-
-.s-feature-card{
-    border: 3px solid orchid;
-    width: 40%;
-    min-height: 30vh;
-    flex-shrink: 0;
-    margin: 3vw 3vh;
-}
-
-
 /* Laptops */
 
 #laptop{
-    border: 0.3vw solid purple;
-    width: 100%;
+    border:hidden;
+    border-radius: 2vw;
+    box-shadow: #7b7b7b 0 0 1vw;
+    width: 90%;
     min-height: auto;
+    position: relative;
+    left: 5vw;
+    bottom: 10vh;
 }
 
-#laptop h1{
-    text-align: center;
-    width: 100%;
-    min-height:20vh;
-    padding-top: 7vh;
-}
 
 #laptop-devices{
-    border: 0.3vw solid darkred;
     width: 100%;
     min-height: 60vh;
     display: flex;
     justify-content: space-evenly;
-    align-items: end;
-    overflow-y: scroll;
+    align-items: baseline;
+    overflow-x: scroll;
+    /* overflow-y: hidden; */
 }
 
 .l-device{
-    border: 0.3vw solid orangered;
+    border: hidden;
+    border-radius: 2vw;
     width: 50%;
     min-height: 50vh;
     flex-shrink: 0;
     margin: 3vh 3vw;
+    margin-bottom: 0;
+    position: relative;
 }
 
-/* Smartwatches */
-
-#smartwatch{
-    border: 0.3vw solid yellow;
+.l-product-top{
+    border: hidden;
+    border-radius: 2vw;
     width: 100%;
-    min-height: auto;
-    margin: 5vh auto;
-
+    max-height: 60vh;
+    transition: 0.4s opacity ease;   
 }
 
-.watch-card-header{
-    border: 0.3vw solid green;
+.l-product-top:hover{
+    opacity: 0;
+}
+
+.l-product-hidden{
+    border: hidden;
+    border-radius: 2vw;
     width: 100%;
-    min-height: 40vh;
-    text-align: center;
-    padding-top: 17vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    max-height: 60vh;
+    position: absolute;
+    left: 0;
+    z-index: -1;
 }
 
-.watch-card{
-    border:0.3vw solid blue;
-    width: 40%;
-    min-height: 50vh;
-    margin: 2vh 2vw;
-
+#that-one{
+    height: 30vh;
 }
-
-.right{
-    justify-self: end;
-}
-
-
-
-
 
 
 

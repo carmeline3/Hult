@@ -92,6 +92,10 @@ fieldset{
 
 }
 
+.social-media-links{
+    margin-top: 4vh;
+}
+
 .social-media-links a{
     text-decoration: none;
     margin: auto 1vw;
@@ -103,6 +107,7 @@ input[type=text], input[type=email], textarea, button{
     background-color: #c4c3c3;
     border: hidden;
     border-radius: 0.2vw;
+    color: rgb(24, 24, 24);
 }
 
 select{
@@ -111,7 +116,12 @@ select{
     border: hidden;
     border-radius: 0.2vw;
     outline:none;
+    color: rgb(24, 24, 24);
 
+}
+
+textarea{
+    appearance: none;
 }
 
 

@@ -7,10 +7,22 @@
     border-radius: 2vw;
     box-shadow: #7b7b7b 0 0 1vw;
     width: 90%;
-    min-height: auto;
+    max-height: 60%;
     position: relative;
     left: 5vw;
     bottom: 10vh;
+}
+
+@media (max-width:500px) {
+    #laptop{
+        height: 20vh;
+    }
+}
+
+@media (max-width:900px) {
+    #laptop{
+        height: 30vh;
+    }
 }
 
 
@@ -39,7 +51,7 @@
     border: hidden;
     border-radius: 2vw;
     width: 100%;
-    max-height: 60vh;
+    max-height: 60%;
     transition: 0.4s opacity ease;   
 }
 
@@ -51,7 +63,7 @@
     border: hidden;
     border-radius: 2vw;
     width: 100%;
-    max-height: 60vh;
+    max-height: 90%;
     position: absolute;
     left: 0;
     z-index: -1;

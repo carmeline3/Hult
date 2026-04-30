@@ -319,7 +319,20 @@ h3 {
 
 /* Responsiveness of the  index page and some of the other pages*/
 
+@media(max-width:1250px){
+    nav a{
+        border: 1px solid rgb(78, 76, 76);
+        border-radius: 20px;
+        min-height: .2vh;
+        width: 1vw;
+        line-height: 50px;
+       
+    }
 
+    .logo{
+        font-size: 20px;
+    }
+}
 @media(min-width:1024px) {
 
     .overviewimg1,
@@ -327,6 +340,12 @@ h3 {
     .overviewimg3 {
         width: 50%;
         height: 50vh;
+    }
+    .logo{
+        font-size: 17px;
+    }
+    nav a{
+        font-size: 10px;
     }
 }
 

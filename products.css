@@ -25,7 +25,8 @@
 }
 
 .l-device{
-    border: 0.3vw solid orangered;
+    border: hidden;
+    border-radius: 2vw;
     width: 50%;
     min-height: 50vh;
     flex-shrink: 0;
@@ -35,6 +36,8 @@
 }
 
 .l-product-top{
+    border: hidden;
+    border-radius: 2vw;
     width: 100%;
     max-height: 60vh;
     transition: 0.4s opacity ease;   
@@ -45,6 +48,8 @@
 }
 
 .l-product-hidden{
+    border: hidden;
+    border-radius: 2vw;
     width: 100%;
     max-height: 60vh;
     position: absolute;

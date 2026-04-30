@@ -76,6 +76,9 @@ nav a:hover {
 .logo{
     font-size: 25px;
     font-weight: 1000;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 
@@ -265,6 +268,7 @@ button:hover{
 .overview-paragraph4>p,
 .overview-paragraph5>p{
 font-size: 20px;
+
 }
 
 
@@ -385,6 +389,7 @@ font-size: 15px;
 .overview-paragraph4>p,
 .overview-paragraph5>p{
 font-size: 15px;
+line-height: 30px;
 }
 
 
@@ -443,7 +448,34 @@ font-size: 15px;
 .overview-paragraph4>p,
 .overview-paragraph5>p{
 font-size: 10px;
+line-height: 20px;
 }
+
+.overviewimg1>img {
+    max-width: 46vw;
+    height:10vh;
+}
+
+.overviewimg2>img {
+    max-width: 80vw;
+    height:10vh;
+}
+
+.overviewimg3>img {
+    max-width: 190vw;
+    height:10vh;
+}
+
+.overviewimg4>img {
+    max-width: 46vw;
+     height:10vh;
+}
+
+.overviewimg5>img {
+    max-width: 130vw;
+    height:10vh;
+}
+
 
 
 

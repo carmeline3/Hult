@@ -39,14 +39,17 @@ body{
     font-family: "Exo 2";
     font-size: 1.6vw;
     color:#c4c3c3;
-    width:70%
+    width:70%;
+    padding: 0;
+    position: relative;
+    top: -10vh;
     
 }
 
 .laptop-sustain{
     transform: scale(1.8);
     position: relative;
-    top: -40vh;
+    top: -50vh;
 }
 
 .recyclable{
@@ -64,6 +67,7 @@ body{
     font-family: "Exo 2";
     line-height: 4vh;
     background-color: #b6c59c;
+    color: rgb(23, 23, 23);
 }
 
 .one{

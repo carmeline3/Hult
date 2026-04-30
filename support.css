@@ -2,23 +2,58 @@
 /* SUPPORT PAGE */
 
 #support-header{
-    border: 0.2vw solid red;
     width: 100%;
     min-height: 50vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('Nissi/img/Support/At\ AutoStar\ Transport\ Express\,\ our\ customer….jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+
+}
+
+.support-header-overlay{
+    backdrop-filter: brightness(0.4);
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 
 }
 
+#support-header h1{
+    font-family: "Share Tech Mono";
+    color: #c4c3c3;
+    font-size: 4vw;
+    font-weight: 700;
+    
+
+}
+
+#support-header p{
+    font-family: "Exo 2";
+    color:#c4c3c3;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
 #main-support{
-    border: 0.4vw solid orchid;
     display: block;
     min-height: fit-content;
+    margin-top: 4vh;
+}
+
+h2{
+    font-family: "Share Tech Mono";
+    font-size: 3vw;
+    color: #e4e4e4;
 }
 
 #support-center{
-    border: 0.2vw solid blueviolet;
     width: 100%;
     min-height: 70vh;
     text-align: center;
@@ -28,17 +63,103 @@
     align-items: center;
 }
 
+#support-center p{
+    font-family: "Exo 2";
+    font-size: 1.8vw;
+    padding: 0;
+    color: #aeaeae;
+}
+
 .support{
-    border: 0.2vw solid seagreen;
+    border: hidden;
+    border-radius: 1vw;
+    box-shadow: 0 0 2vh #c4c3c3;
     width: 95vw;
-    min-height: 80%;
+    min-height: 40vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 4vh;
+    
+}
+
+.support-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+
+}
+
+.support-1 label{
+    font-family: "Exo 2";
+}
+
+#support-message{
+    appearance: none;
+    background-color: #cccbcb;
+    width: 30vw;
+    height: 20%;
+    border: hidden;
+    border-radius: 0.6vw;
+    color: #2c2c2c;
+    font-family: "Exo 2";
+    padding: 1vw;
+    transition: 0.5s box-shadow ease;
+}
+
+#support-message:focus{
+    outline:none;
+    box-shadow: #c4c3c3 0 0 0.5vw;
+
+}
+
+#support-message:hover{
+    box-shadow: #c4c3c3 0 0 0.5vw;
+ 
+}
+
+.support-1 button{
+    width: 10vw;
+    color: #a3a3a3;
+    background-color: #242222;
+    border: hidden;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    margin-top: 2vh;
+    transition: 0.5s box-shadow ease;
+}
+
+.support-1 button:hover{
+    box-shadow: #c4c3c3 0 0 0.5vw;
+    cursor: pointer;
+}
+
+.support-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+}
+
+.support-2 label{
+    font-family: "Exo 2";
+}
+
+#support-message-file{
+    background-color: #363535;
+    border: hidden;
+    padding: 5vh 3vw;
+    padding-left: 10vw;
+    border-radius: 0.5vw;
+    font-family: "Exo 2";
+    text-align: center;
+    height: 15vh;
 }
 
 #community-help{
-    border: 0.2vw solid blue;
     width: 100%;
     min-height: 100vh;
     text-align: center;
@@ -46,10 +167,17 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 8vh;
+}
+
+#community-help .community-help-para{
+    font-family: "Exo 2";
+    font-size: 1.6vw ;
+    color: #a4a4a4;
+    margin-bottom: 8vh;
 }
 
 .com{
-    border: 0.2vw solid rgb(112, 84, 8);
     width: 95vw;
     min-height: 90%;
     display: flex;
@@ -60,20 +188,116 @@
 }
 
 .FAQs{
-    border: paleturquoise 0.2vw solid;
+    border-radius: 2vw;
+    background-color: #6f6f6f76;
     width: 95%;
     min-height: 50%;
+    padding: 3vw;
+    box-shadow: black 0 0 5vw;
+
+}
+
+.FAQs h3{
+    font-family:"Share Tech Mono";
+    font-size: 2.5vw;
+    color: #c4c3c3;
+}
+
+.FAQs h4{
+    font-family:"Exo 2";
+    font-size: 2vw;
+    color: #c4c3c3;
+
+}
+
+#questions p{
+    font-family:"Exo 2";
+}
+
+.faq-question{
+    font-size: 1.9vw;
+    color: #121212;
+    text-align: left;
+}
+
+.faq-answer{
+    font-size: 1.5vw;
+    color: #9f9f9f;
 }
 
 .Com-Hub{
-    border: rgb(5, 60, 60) 0.2vw solid;
+    border: 0.1vw solid black;
+    border-radius: 2vw;
     width: 95%;
     min-height: 50%;
-    margin-top: 4vh;
+    margin-top: 8vh;
+    box-shadow: black 0 0 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.com-all{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: scroll;
+    font-family: "Exo 2";
+}
+
+.Com-Hub h3{
+    font-family: "Share Tech Mono";
+    font-size: 2.5vw;
+    margin-top: 8vh;
+}
+
+.com-posts{
+    width: 40vw;
+    height: 50vh;
+    flex-shrink: 0;
+    margin: 3vw;
+    box-shadow: #8e8d8d 0 0 0.5vw;
+    border: hidden;
+    border-radius: 1.5vw;
+    overflow-y: scroll;
+    flex-shrink: 0;
+}
+
+.com-posts h4{
+    font-size: 2vw;
+}
+
+.com-posts p{
+    font-size: 1.2vw;
+    padding: 1.5vh;
+}
+
+#post-block{
+    box-shadow: #000000 0 0 0.5vw;
+    border: hidden;
+    border-radius: 1.5vw;
+    padding: 1vw;
+    width: 35vw;
+    margin: 2vw auto;
+}
+
+#post-block img{
+    width: 40%;
+    height: auto;
+}
+
+.post-comment-img{
+    width: 40%;
+}
+
+#profile-img{
+    width: 2vw;
+    height: auto;
 }
 
 #repair-services{
-    border: 0.2vw solid rgb(121, 175, 34);
+    background-color: #6b6a6a;
     width: 100%;
     min-height: 100vh;
     text-align: center;
@@ -83,20 +307,45 @@
     align-items: center;
 }
 
-.repair-ad{
-    width: 95%;
-    min-height: 50vh;
-    border: 0.2vw solid green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#repair-services p{
+    padding: 0;
+    font-family: "Exo 2";
+    font-size: 2vw;
 }
 
-.repair-book{
-    width: 95%;
+.repair-ad{
+    width: 100%;
     min-height: 50vh;
-    border: 0.2vw solid red;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    overflow-x: scroll;
+    margin-top: 5vh;
+    padding: 5vh;
+}
+
+.repair-type{
+    margin: auto 3vw;
+    padding: 2vw;
+    border: hidden;
+    border-radius: 1.5vw;
+    box-shadow: #000000 0 0 2vw;
+    width: 40%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.repair-type img{
+    width:60%;
+    height: 60%;
+    border: hidden;
+    border-radius: 2vw;
+}
+
+.repair-type p{
+    font-family: "Exo 2";
+    font-size: 1.9vw;
+    color:#e4e4e4;
+    padding: 0;
+    
 }

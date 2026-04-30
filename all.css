@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-
+    scrollbar-width: thin;
+    scrollbar-color: #252525 #585858;
 }
 
 body {
@@ -28,7 +29,6 @@ body {
 
 /* This section is the header and the navbar as well  */
 header {
-    border: 3px solid pink;
     min-height: 100vh;
     width: 100%;
 
@@ -36,7 +36,7 @@ header {
 
 
 nav {
-    border: 3px solid black;
+
     min-height: 18vh;
     width: 100%;
     display: flex;
@@ -44,8 +44,15 @@ nav {
     align-items: center;
     gap: 25px;
     background-color: rgb(40, 40, 40);
+     padding:25px;
+     /* position:fixed;
+     z-index: 1000;
+     */
 
 }
+
+
+
 
 nav a {
     text-decoration: none;
@@ -55,6 +62,7 @@ nav a {
     letter-spacing: 1px;
     padding: 10px 12px;
     transition: 0.3s ease;
+    font-family: "Exo 2";
 }
 
 nav a:hover {
@@ -65,19 +73,24 @@ nav a:hover {
 
 }
 
+.logo{
+    font-size: 25px;
+    font-weight: 1000;
+}
+
 
 .iphone1,
 .iphone2,
 .iphone3,
 .iphone4,
 .iphone5 {
-    border: 3px solid purple;
     min-height: 90vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     position: relative;
-    
+    padding-top: 50px;
+    font-family: "Exo 2";
 
 
 }
@@ -142,13 +155,31 @@ h1,
 p {
     position: relative;
     z-index: 2;
-    color: white;
-    /* font-size: 20px; */
-    padding-top: 40px;
+    /* color: white;
+    font-size: 25px;
+    padding-top: 40px; */
+
+}
+button a{
+    color:rgb(44, 41, 41);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+     
 
 }
 
+button{
+cursor: pointer;
+    transition: 0.3s ease;
+}
 
+button:hover{
+     transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 10px #738571,
+                0 0 25px #686a68,
+                0 0 40px #181919;
+}
 
 .iphone1>button,
 .iphone2>button,
@@ -166,10 +197,21 @@ p {
 
 
 
+
 .iphone1>h2,.iphone2>h2,.iphone3>h2,.iphone4>h2,.iphone5>h2 {
     font-size:45px;
     font-weight: bold;
 
+}
+
+
+
+.iphone1>p,
+.iphone2>p,
+.iphone3>p,
+.iphone4>p,
+.iphone5>p{
+    font-size:20px;
 }
 /* .iphone>h2 {
     font-size: 45px;
@@ -186,7 +228,6 @@ p {
 .overview3,
 .overview4,
 .overview5 {
-    border: 4px solid #008000;
     min-height: 100vh;
     width: 100%;
     padding: 3vw;
@@ -195,6 +236,7 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: 2vw;
+    font-family: "Exo 2";
 }
 
 .overview-paragraph1,
@@ -202,10 +244,29 @@ p {
 .overview-paragraph3,
 .overview-paragraph4,
 .overview-paragraph5 {
-    border: 3px solid orange;
     width: 40%;
     min-height: 400px;
+    line-height: 50px;
 }
+
+.overview-paragraph1>h2,
+.overview-paragraph2>h2,
+.overview-paragraph3>h2,
+.overview-paragraph4>h2,
+.overview-paragraph5>h2{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+.overview-paragraph1>p,
+.overview-paragraph2>p,
+.overview-paragraph3>p,
+.overview-paragraph4>p,
+.overview-paragraph5>p{
+font-size: 20px;
+}
+
 
 .overviewimg1,
 .overviewimg2,
@@ -215,7 +276,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid red;
     width: 50%;
     min-height: 500px;
 }
@@ -226,13 +286,13 @@ p {
 }
 
 .overviewimg2>img {
-    max-width: 100vw;
-    min-height: 65vh
+    max-width: 80vw;
+    min-height: 40vh
 }
 
 .overviewimg3>img {
     max-width: 190vw;
-    min-height: 75vh
+   min-height: 45vh
 }
 
 .overviewimg4>img {
@@ -256,143 +316,144 @@ h3 {
 }
 
 
+
 /* Responsiveness of the  index page and some of the other pages*/
 
 
-@media(min-width:1024px){
-    .overviewimg1, .overviewimg2, .overviewimg3{
-    border: 3px solid orange;
-    width: 50%;
-    height: 50vh;
+@media(min-width:1024px) {
+
+    .overviewimg1,
+    .overviewimg2,
+    .overviewimg3 {
+        width: 50%;
+        height: 50vh;
+    }
 }
-}
-@media(max-width:920px){
-    header{
-        width:100%;
+
+@media(max-width:920px) {
+    header {
+        width: 100%;
         min-height: auto;
     }
+
+    nav a {
+        font-size: 7px;
+    }
+
+    .logo {
+        font-size: 8px;
+    }
+
+     
+
+    .overviewimg1>img,.overviewimg2>img,.overviewimg3>img,.overviewimg4>img,.overviewimg5>img {
+        width: 100%;
+        min-height: 60vh;
+    }
+
+     
+    .overview-paragraph1>p, .overview-paragraph2>p, .overview-paragraph3>p,.overview-paragraph4>p,.overview-paragraph5>p{
+font-size: 15px;
+    }
+
+     .overview-paragraph1>h2,.overview-paragraph2>h2,.overview-paragraph3>h2,.overview-paragraph4>h2,.overview-paragraph5>h2{
+        font-size: 20px;
+     }
+    .iphone1>button {
+        width: 50%;
+    }
+
+    .iphone2>button {
+        width: 50%;
+    }
+
+    .iphone3>button {
+        width: 50%;
+    }
+
+    .iphone4>button {
+        width: 50%;
+    }
+
+    .iphone5>button {
+        width: 50%;
+    }
+
+    .overview-paragraph1>p,
+.overview-paragraph2>p,
+.overview-paragraph3>p,
+.overview-paragraph4>p,
+.overview-paragraph5>p{
+font-size: 15px;
+}
+
+
     
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    
 
-    .overviewimg1, .overviewimg2, .overviewimg3{
+
+    .overviewimg1,
+    .overviewimg2,
+    .overviewimg3 {
         width: 50%;
-         min-height:40vh;
-         border: 2px solid yellow;
+        min-height: 40vh;
+        
     }
 
-    nav{
+    nav {
         min-height: 10vh;
         padding: 32px;
     }
 
 
-    header{
+    header {
         height: 60vh;
-        border: 10px solid green;
+        
     }
-.overview1, .overview2, .overview3{
+
+    .overview1,
+    .overview2,
+    .overview3 {
         padding: 6vw;
         min-height: 70vh;
     }
 
-    .overview-paragraph1, .overview-paragraph2, .overview-paragraph3{
-        width:40vw;
+    .overview-paragraph1,
+    .overview-paragraph2,
+    .overview-paragraph3 {
+        width: 40vw;
     }
 }
 
-@media(max-width:480px){
+@media(max-width:480px) {
 
-    .overview1, .overview2, .overview3{
+    .overview1,
+    .overview2,
+    .overview3 {
         padding: 6vw;
         min-height: 60vh;
     }
 
+.overview-paragraph1>p,
+.overview-paragraph2>p,
+.overview-paragraph3>p,
+.overview-paragraph4>p,
+.overview-paragraph5>p{
+font-size: 10px;
 }
 
 
 
 
-/* Responsiveness of the  index page*/
-
-@media(max-width:920px){
-header{
-    width:100%;
-    border: 2vw solid green;
-    height: 100vh;
-}
-}
-
-@media(max-width:720px){
-header{
-    width:100%;
-    border: 2vw solid;
-    height: 100vh;
-}
-
-
-.headset > div{
-    min-height: 20vh;
-}
-
-.images-of-devices{
-border: 2px solid purple;
-    min-height:7vh;
-    grid-template-columns: repeat(1, 1fr);
-}
-
-.images-of-devices > div{
-    border:3px solid gold;
-    min-height: 10vh;
-}
 }
 
 
 
-@media(max-width:1024px){
-    .security-box{
-     border:5px solid pink;
-     min-height:20vh;
-    width:40vw;
-}
-}
-
-@media(max-width:720px){
-    .security-box{
-     border:5px solid pink;
-     min-height:40vh;
-    width:30%;
-}
-.products-grid{
-    grid-template-columns: repeat(1, 1fr);
-    min-height: 7vh;
-}
-
-.security-detail{
-    font-size: 10px;
-}
 
 
-.layer{
-    border:2px solid gold;
-    min-height: 4vh;
-    width:20vw;
-    border-radius: 30px;
-}
-
-.layer >p{
-    font-size:10px;
-}
-.partner{
-   min-height:30vh;
-}
-
-
-
-}
 
 /* FOOTER */
 
@@ -418,6 +479,10 @@ footer{
     width: 30vw;
     align-self: baseline;
     margin: 2vh auto;
+}
+
+.footer-sections p{
+    padding: 0;
 }
 
 .copyright{

@@ -28,7 +28,6 @@ body {
 
 /* This section is the header and the navbar as well  */
 header {
-    border: 3px solid pink;
     min-height: 100vh;
     width: 100%;
 
@@ -36,7 +35,7 @@ header {
 
 
 nav {
-    border: 3px solid black;
+
     min-height: 18vh;
     width: 100%;
     display: flex;
@@ -73,13 +72,17 @@ nav a:hover {
 
 }
 
+.logo{
+    font-size: 25px;
+    font-weight: 1000;
+}
+
 
 .iphone1,
 .iphone2,
 .iphone3,
 .iphone4,
 .iphone5 {
-    border: 3px solid purple;
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -224,7 +227,6 @@ button:hover{
 .overview3,
 .overview4,
 .overview5 {
-    border: 4px solid #008000;
     min-height: 100vh;
     width: 100%;
     padding: 3vw;
@@ -241,7 +243,6 @@ button:hover{
 .overview-paragraph3,
 .overview-paragraph4,
 .overview-paragraph5 {
-    border: 3px solid orange;
     width: 40%;
     min-height: 400px;
     line-height: 50px;
@@ -274,7 +275,6 @@ font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid red;
     width: 50%;
     min-height: 500px;
 }
@@ -324,7 +324,6 @@ h3 {
     .overviewimg1,
     .overviewimg2,
     .overviewimg3 {
-        border: 3px solid orange;
         width: 50%;
         height: 50vh;
     }
@@ -341,7 +340,7 @@ h3 {
     }
 
     .logo {
-        font-size: 9px;
+        font-size: 8px;
     }
 
      
@@ -400,7 +399,7 @@ font-size: 15px;
     .overviewimg3 {
         width: 50%;
         min-height: 40vh;
-        border: 2px solid yellow;
+        
     }
 
     nav {
@@ -411,7 +410,7 @@ font-size: 15px;
 
     header {
         height: 60vh;
-        border: 10px solid green;
+        
     }
 
     .overview1,

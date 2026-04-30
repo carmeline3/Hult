@@ -1,16 +1,29 @@
 /* KEY FOCUS AREAS PAGE */
 
+body{
+    background-color: rgb(22, 22, 22);
+}
+
 #keyareas-header{
-    border: 0.3vw solid red;
     width: 100%;
     min-height: 50vh;
     text-align: center;
     padding-top: 20vh;
+    background-image: url('Nissi/img/Key-Areas/keyfocus.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    font-family: "Share Tech Mono";
 
 }
 
+#keyareas-header h1{
+    font-family: "Share Tech Mono";
+    font-size: 5vw;
+    top: -8vh;
+}
+
 #keyareas-main{
-    border: 0.3vw solid orangered;
     width: 100%;
     min-height: 200vh;
     display: flex;
@@ -22,7 +35,6 @@
 .keyareas-card{
     width: 100%;
     min-height: 50vh;
-    border: 0.3vw solid yellow;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -30,8 +42,22 @@
 }
 
 .keyareas-card p {
-    border: 0.3vw solid green;
+    border-radius: 2vw;
+    box-shadow: black 0 0 2vw;
     width: 45%;
     min-height: 60vh;
     margin: 5vh auto;
+    font-family: "Exo 2";
+    text-align: center;
+    padding-top: 8vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.keyareas-card img{
+    width: 45%;
+    min-height: 60vh;
+    margin: 5vh auto;
+    border: hidden;
+    border-radius: 2vw;
 }

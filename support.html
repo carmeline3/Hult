@@ -31,8 +31,10 @@
     </nav>
     
     <header id="support-header">
-        <h1>SUPPORT</h1>
-        <p>Find the help you need</p>
+        <div class="support-header-overlay">
+            <h1>SUPPORT</h1>
+            <p>Find the help you need</p>
+        </div>
     </header>
 
     <main id="main-support">
@@ -46,12 +48,13 @@
 
             <div class="support">
 
-                <div>
+                <div class="support-1">
                     <label for="support-message">Tell us your problem: </label><br>
                     <textarea name="support-message" id="support-message"></textarea>
+                    <button onclick="support()" type="submit">SUBMIT    </button>
                 </div>
 
-                <div>
+                <div class="support-2">
                     <label for="support-message-file">Send a screenshot of your issue (Optional): </label><br>
                     <input type="file" id="support-message-file">
                 </div>
@@ -66,7 +69,7 @@
         <section id="community-help">
 
             <h2>Community Help Hub</h2>
-            <p>Need help? Take a look at comments from other people - you could find your solution here!</p>
+            <p class="community-help-para">Need help? Take a look at comments from other people - you could find your solution here!</p>
 
             <div class="com">
 
@@ -77,28 +80,29 @@
                     <h4>Frequently asked questions from the community: </h4>
 
                     <article id="questions">
-                        <p>Question</p>
-                        <p>Answer</p>
+                        <p class="faq-question">1. Is This Website Secure from Hackers and Data Breaches? 
+</p>
+                        <p class="faq-answer">Our technology uses 256-bit TLS/SSL encryption, HTTPS, and maintains PCI DSS compliance for secure payment processing.</p>
                     </article>
 
                     <article id="questions">
-                        <p>Question</p>
-                        <p>Answer</p>
+                        <p class="faq-question">2. How Can I Track My Order?</p>
+                        <p class="faq-answer">After placing an order, you will receive an automated confirmation email or message containing order details and an estimated delivery window. Once the item is packed and picked up by a courier (e.g., UPS, FedEx, DHL), a second email will be sent with a tracking number (or tracking ID) and a clickable link to the courier's portal. Click the tracking link provided in the email for real-time updates. Make sure to check the status, which typically updates from "Order Placed" to "Shipped," "In Transit," and finally "Out for Delivery".</p>
                     </article>
 
                     <article id="questions">
-                        <p>Question</p>
-                        <p>Answer</p>
+                        <p class="faq-question">3. What Payment Methods Are Accepted?</p>
+                        <p class="faq-answer">We accept credit/debit cards, PayPal, and digital wallets. We also allow in-app payments via Peach Payments and PayFast, two incredibly reliable payment gateways you can use.</p>
                     </article>
 
                     <article id="questions">
-                        <p>Question</p>
-                        <p>Answer</p>
+                        <p class="faq-question">4. What Is Your Return/Refund Policy?</p>
+                        <p class="faq-answer">Please notify the company 30 days before returning your product to the nearest branch. We only accept refunds if you can prove than the device is faulty by our own work.</p>
                     </article>
 
                     <article id="questions">
-                        <p>Question</p>
-                        <p>Answer</p>
+                        <p class="faq-question">5. How Can I Contact Customer Support?</p>
+                        <p class="faq-answer">You can find help on this page, or contact us <a href="contactus.html">here</a>.</p>
                     </article>
 
                 </div>
@@ -107,218 +111,213 @@
 
                     <h3>Community posts</h3>
 
-                    <div class="com-posts">
+                    <div class="com-all">
 
-                        <div id="post-block">
-                            <img src="" alt=""> <!--Screenshot of problem here-->
-                            <article>
-                                <h4>Question</h4>
-                                <p>Details</p>
-                            </article>
-                        </div>
+                        <div class="com-posts">
 
-                        <div id="post-comment-section">
+                            <div id="post-block">
+                                <article>
+                                    <h4>Why are there no buttons to navigate my screen?</h4>
+                                    <p>I bought my phone today and I can't find the app list or anything. There are no buttons and it doesn't work like an iPhone, where you would just drag the edges in the opposite direction to scroll.</p>
+                                </article>
+                            </div>
 
-
-                            <article class="post-comment">
-
-                                <div class="comment-profile">
-                                    <img src="" alt=""><!--Profile picture-->
-                                    <h5>Anonymous said:</h5>
-                                    <p>(Date)</p>
-                                </div>
-
-                                <p>Explanation</p>
-                                <img src="" alt=""> <!--Screenshot for detail-->
-
-                            </article>
+                            <div id="post-comment-section">
 
 
-                        </div>
+                                <article class="post-comment">
 
-                    </div>
-                    <div class="com-posts">
+                                    <div class="comment-profile">
+                                        <img src="Nissi/img/Support/gg--profile.svg" alt=""><!--Profile picture-->
+                                        <h5>Anonymous said:</h5>
+                                        <p>20/12/24</p>
+                                    </div>
 
-                         <div id="post-block">
-                            <img src="" alt=""> <!--Screenshot of problem here-->
-                            <article>
-                                <h4>Question</h4>
-                                <p>Details</p>
-                            </article>
-                        </div>
+                                    <p>Tap the empty space in the top right corner two times. You'll be given options with which you can access navigation.</p>
 
-                        <div id="post-comment-section">
+                                </article>
 
 
-                            <article class="post-comment">
-
-                                <div class="comment-profile">
-                                    <img src="" alt=""><!--Profile picture-->
-                                    <h5>Anonymous said:</h5>
-                                    <p>(Date)</p>
-                                </div>
-
-                                <p>Explanation</p>
-                                <img src="" alt=""> <!--Screenshot for detail-->
-
-                            </article>
-
+                            </div>
 
                         </div>
+                        <div class="com-posts">
 
-                    </div>
+                            <div id="post-block">
+                                <article>
+                                    <h4>My battery drains too quickly!</h4>
+                                    <p>I just got this laptop, and the battery drained within 2 hours.</p>
+                                </article>
+                            </div>
 
-                    <div class="com-posts">
-
-                         <div id="post-block">
-                            <img src="" alt=""> <!--Screenshot of problem here-->
-                            <article>
-                                <h4>Question</h4>
-                                <p>Details</p>
-                            </article>
-                        </div>
-
-                        <div id="post-comment-section">
+                            <div id="post-comment-section">
 
 
-                            <article class="post-comment">
+                                <article class="post-comment">
 
-                                <div class="comment-profile">
-                                    <img src="" alt=""><!--Profile picture-->
-                                    <h5>Anonymous said:</h5>
-                                    <p>(Date)</p>
-                                </div>
+                                    <div class="comment-profile">
+                                        <img src="Nissi/img/Support/gg--profile.svg" alt="" id="profile-img"><!--Profile picture-->
+                                        <h5>Anonymous said:</h5>
+                                        <p>30/06/26</p>
+                                    </div>
 
-                                <p>Explanation</p>
-                                <img src="" alt=""> <!--Screenshot for detail-->
+                                    <p>Drained batteries are usually the product of battery damage, processes running in the background. Check those before attempting to return your laptop.</p>
 
-                            </article>
 
+                                </article>
+
+
+                            </div>
 
                         </div>
 
-                    </div>
+                        <div class="com-posts">
+
+                            <div id="post-block">
+                                <article>
+                                    <h4>My smartwatch won't connect to my phone</h4>
+                                    <p>I bought my smartwatch recently, but it only gives me the option to connect with a PulsePhone. Can I not connect it to my Samsung?</p>
+                                </article>
+                            </div>
+
+                            <div id="post-comment-section">
 
 
-                    <div class="com-posts">
+                                <article class="post-comment">
 
-                         <div id="post-block">
-                            <img src="" alt=""> <!--Screenshot of problem here-->
-                            <article>
-                                <h4>Question</h4>
-                                <p>Details</p>
-                            </article>
-                        </div>
+                                    <div class="comment-profile">
+                                        <img src="" alt=""><!--Profile picture-->
+                                        <h5>HITLURE said:</h5>
+                                        <p>31/02/26</p>
+                                    </div>
 
-                        <div id="post-comment-section">
+                                    <p>You can connect your Samsung to our VitaWatch, but you will need to take it to the nearest store to have a professional do it for you.</p>
+
+                                </article>
 
 
-                            <article class="post-comment">
-
-                                <div class="comment-profile">
-                                    <img src="" alt=""><!--Profile picture-->
-                                    <h5>Anonymous said:</h5>
-                                    <p>(Date)</p>
-                                </div>
-
-                                <p>Explanation</p>
-                                <img src="" alt=""> <!--Screenshot for detail-->
-
-                            </article>
-
+                            </div>
 
                         </div>
 
-                    </div>
 
-                    <div class="com-posts">
+                        <div class="com-posts">
 
-                         <div id="post-block">
-                            <img src="" alt=""> <!--Screenshot of problem here-->
-                            <article>
-                                <h4>Question</h4>
-                                <p>Details</p>
-                            </article>
-                        </div>
+                            <div id="post-block">
+                                <img src="Nissi/img/Support/image copy 5.png" alt=""> <!--Screenshot of problem here-->
+                                <article>
+                                    <h4>My earpods look weird</h4>
+                                    <p>One of my earpods has this weird rubber thingy that refuses to snap back into is original shape. It's made of harder-than-normal rubber and hurts my ears.</p>
+                                </article>
+                            </div>
 
-                        <div id="post-comment-section">
-
-
-                            <article class="post-comment">
-
-                                <div class="comment-profile">
-                                    <img src="" alt=""><!--Profile picture-->
-                                    <h5>Anonymous said:</h5>
-                                    <p>(Date)</p>
-                                </div>
-
-                                <p>Explanation</p>
-                                <img src="" alt=""> <!--Screenshot for detail-->
-
-                            </article>
+                            <div id="post-comment-section">
 
 
-                        </div>
+                                <article class="post-comment">
 
-                    </div>
+                                    <div class="comment-profile">
+                                        <img src="" alt=""><!--Profile picture-->
+                                        <h5>HITLURE said:</h5>
+                                        <p>17/04/26</p>
+                                    </div>
 
-                    <div class="com-posts">
+                                    <p>Hi! It looks like that's a manufacturing error on our side. Please submit a return request on our contact page and we'll guide you on the next steps.</p>
 
-                         <div id="post-block">
-                            <img src="" alt=""> <!--Screenshot of problem here-->
-                            <article>
-                                <h4>Question</h4>
-                                <p>Details</p>
-                            </article>
-                        </div>
-
-                        <div id="post-comment-section">
+                                </article>
 
 
-                            <article class="post-comment">
-
-                                <div class="comment-profile">
-                                    <img src="" alt=""><!--Profile picture-->
-                                    <h5>Anonymous said:</h5>
-                                    <p>(Date)</p>
-                                </div>
-
-                                <p>Explanation</p>
-                                <img src="" alt=""> <!--Screenshot for detail-->
-
-                            </article>
-
+                            </div>
 
                         </div>
 
-                    </div>
+                        <div class="com-posts">
 
-                    <div class="com-posts">
+                            <div id="post-block">
+                                <img src="Nissi/img/Support/image copy 6.png" alt=""> <!--Screenshot of problem here-->
+                                <article>
+                                    <h4>My laptop keeps showing me this error</h4>
+                                    <p>Lately, everytime I want to start my laptop, it shows me this screen for about 20 minutes before shutting off completely. What do I do?</p>
+                                </article>
+                            </div>
 
-                         <div id="post-block">
-                            <img src="" alt=""> <!--Screenshot of problem here-->
-                            <article>
-                                <h4>Question</h4>
-                                <p>Details</p>
-                            </article>
+                            <div id="post-comment-section">
+
+
+                                <article class="post-comment">
+
+                                    <div class="comment-profile">
+                                        <img src="" alt=""><!--Profile picture-->
+                                        <h5>HITLURE said:</h5>
+                                        <p>29/04/26</p>
+                                    </div>
+
+                                    <p>Please book a repair service for software & maintenance in our Contact page, and take your laptop to the nearest branch.</p>
+
+                                </article>
+
+
+                            </div>
+
                         </div>
 
-                        <div id="post-comment-section">
+                        <div class="com-posts">
+
+                            <div id="post-block">
+                                <img src="Nissi/img/Support/image copy 7.png" alt=""> <!--Screenshot of problem here-->
+                                <article>
+                                    <h4>How do I turn it on?</h4>
+                                    <p>I don't know how to use a smartwatch...</p>
+                                </article>
+                            </div>
+
+                            <div id="post-comment-section">
 
 
-                            <article class="post-comment">
+                                <article class="post-comment">
 
-                                <div class="comment-profile">
-                                    <img src="" alt=""><!--Profile picture-->
-                                    <h5>Anonymous said:</h5>
-                                    <p>(Date)</p>
-                                </div>
+                                    <div class="comment-profile">
+                                        <img src="Nissi/img/Support/gg--profile.svg" alt=""><!--Profile picture-->
+                                        <h5>Anonymous said:</h5>
+                                        <p>6/03/26</p>
+                                    </div>
 
-                                <p>Explanation</p>
-                                <img src="" alt=""> <!--Screenshot for detail-->
+                                    <p>Press and hold that round knob thing on the side for about 5 seconds. There's a manual in the box to explain everything else.</p>
+                                    <img src="Nissi/img/Support/image copy 8.png" alt="" class="post-comment-img"> <!--Screenshot for detail-->
 
-                            </article>
+                                </article>
 
+
+                            </div>
+
+                        </div>
+
+                        <div class="com-posts">
+
+                            <div id="post-block">
+                                <article>
+                                    <h4>Not a question</h4>
+                                    <p>No question here. Just wanna say I'm loving these products!</p>
+                                </article>
+                            </div>
+
+                            <div id="post-comment-section">
+
+
+                                <article class="post-comment">
+
+                                    <div class="comment-profile">
+                                        <img src="" alt=""><!--Profile picture-->
+                                        <h5>HITLURE said:</h5>
+                                        <p>29/04/26</p>
+                                    </div>
+
+                                    <p>Thank you for purchasing from HITLURE! We do our best for customers like you.</p>
+
+                                </article>
+
+
+                            </div>
 
                         </div>
 
@@ -336,39 +335,34 @@
         <section id="repair-services">
 
             <h2>Certified Repair Services</h2>
+            <p><a href="contactus.html">Contact us</a> for more information</p>
 
             <div class="repair-ad">
 
                 <div class="repair-type">
-                    (Image & overlay text)
-                    Battery replacement
+                    <img src="Nissi/img/Support/image.png" alt="">
+                    <p class="overlay">Screen Replacement</p>
                 </div>
 
                 <div class="repair-type">
-                    (Image & overlay text)
-                    screen replacement
+                    <img src="Nissi/img/Support/image copy.png" alt="">
+                    <p class="overlay">Battery Replacement</p>
                 </div>
 
                 <div class="repair-type">
-                    (Image & overlay text)
-                    Full repair
+                    <img src="Nissi/img/Support/image copy 2.png" alt="">
+                    <p class="overlay">Software & Maintenance</p>
                 </div>
 
                 <div class="repair-type">
-                    (Image & overlay text)
-                    customization
+                    <img src="Nissi/img/Support/image copy 3.png" alt="">
+                    <p class="overlay">Keyboard/Trackpad Repair</p>
                 </div>
 
                 <div class="repair-type">
-                    (Image & overlay text)
-                    screen protector installation
+                    <img src="Nissi/img/Support/image copy 4.png" alt="">
+                    <p class="overlay">Charging Port Repair</p>
                 </div>
-
-            </div>
-
-            <div class="repair-book">
-
-                <p>BOOK REPAIR HERE (Repair Form)</p>
 
             </div>
 

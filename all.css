@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-
+    scrollbar-width: thin;
+    scrollbar-color: #252525 #585858;
 }
 
 body {
